@@ -1,5 +1,4 @@
 'use strict';
-var app = require('angular').module('angular-application');
 
 function routes($stateProvider, $urlRouterProvider, viewUrl) {
     
@@ -9,6 +8,16 @@ function routes($stateProvider, $urlRouterProvider, viewUrl) {
         url: '/home',
         templateUrl: viewUrl('/home/index.html'),
         controller: 'HomeController',
+        controllerAs: 'vm',
+        data: {
+            stateData: null
+        }
+    });
+
+    $stateProvider.state('About', {
+        url: '/about',
+        templateUrl: viewUrl('/about/index.html'),
+        controller: 'AboutController',
         controllerAs: 'vm',
         data: {
             stateData: null
@@ -29,4 +38,5 @@ function routes($stateProvider, $urlRouterProvider, viewUrl) {
 
 routes.$inject = ['$stateProvider', '$urlRouterProvider', 'viewUrl'];
 
-app.config(routes);
+module.exports = routes;
+

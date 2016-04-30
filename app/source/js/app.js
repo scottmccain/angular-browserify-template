@@ -15,7 +15,10 @@ app.constant('viewUrl', function(relativePath) {
     return '/views' + relativePath ;
 });
 
-require('./route');
+
+app.config(require('./route'));
+
+//require('./route');
 require('./service');
 require('./controller');
 
