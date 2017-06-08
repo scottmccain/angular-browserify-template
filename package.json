@@ -40,13 +40,14 @@
     "jshint": "^2.9.1",
     "jshint-stylish": "^2.1.0",
     "vinyl-source-stream": "^1.1.0",
-    "vinyl-transform": "^1.0.0"
+    "vinyl-transform": "^1.0.0",
+    "watchify": "^3.7.0"
   },
   "dependencies": {
-    "angular-resource": "^1.5.1",
-    "angular-ui-router": "^0.2.18",
-    "backstretch": "^1.2.2",
-    "font-awesome": "^4.5.0",
+    "angular-resource": "^1.6.4",
+    "angular": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
+    "font-awesome": "^4.7.0",
     "ngalertify": "^1.0.2",
     "ui-router": "^1.0.0-alpha0"
   }

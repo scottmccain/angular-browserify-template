@@ -8,7 +8,7 @@ require('angular-bootstrap-npm');
 require('ngalertify');
 
 
-var app = angular.module('angular-application', ['ui.router', 'ui.bootstrap', 'ngAlertify', require('angular-resource')]);
+var app = angular.module('angular-application', ['ui.router', 'ui.bootstrap', 'ngAlertify', require('angular-resource'), 'auth0.auth0']);
 
 
 app.constant('viewUrl', function(relativePath) {
